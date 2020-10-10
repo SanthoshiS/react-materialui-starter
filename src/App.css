@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.ins-ui {
+  background: #fafafa;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.ins-body {
   min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 575.98px) {
+  .ins-body {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .side-bar,
+  .ins-search {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .ins-body {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .ins-main {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .side-bar,
+  .ins-search {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .ins-body {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .ins-main {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .side-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .ins-body {
+    max-width: 900px;
+  }
+
+  .ins-main {
+    max-width: 70%;
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .ins-body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ins-body {
+    width: 100%;
   }
 }
